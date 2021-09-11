@@ -63,8 +63,10 @@
     {* Insere um espaço entre cada caractere de uma variável. Você pode opcionalmente passar um caractere (ou uma string) diferente para inserir. *}
     Título com Spacify: {$titulo|spacify:"^"}.
     <br />
-    {* *}
+    {* Isto quebra uma string para uma largura de coluna, o padrão é 80. *}
     Tópico wordwrap: {$topico|wordwrap:50:"<br />"}.
-
+    <br />
+    {* Você pode aplicar a quantidade de moficadores que quiser à uma variável. *}
+    Combinando modificadores: {$titulo|upper|spacify:'^'|truncate:15:'...'}.
     </body>
 </html>

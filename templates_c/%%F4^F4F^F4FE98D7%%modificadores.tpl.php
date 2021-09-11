@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.31, created on 2021-09-08 17:41:40
+<?php /* Smarty version 2.6.31, created on 2021-09-09 13:38:37
          compiled from modificadores.tpl */ ?>
 <?php require_once(SMARTY_CORE_DIR . 'core.load_plugins.php');
 smarty_core_load_plugins(array('plugins' => array(array('modifier', 'upper', 'modificadores.tpl', 10, false),array('modifier', 'truncate', 'modificadores.tpl', 13, false),array('modifier', 'date_format', 'modificadores.tpl', 16, false),array('modifier', 'count', 'modificadores.tpl', 22, false),array('modifier', 'capitalize', 'modificadores.tpl', 25, false),array('modifier', 'count_characters', 'modificadores.tpl', 28, false),array('modifier', 'cat', 'modificadores.tpl', 31, false),array('modifier', 'count_paragraphs', 'modificadores.tpl', 34, false),array('modifier', 'count_sentences', 'modificadores.tpl', 37, false),array('modifier', 'count_words', 'modificadores.tpl', 40, false),array('modifier', 'default', 'modificadores.tpl', 46, false),array('modifier', 'indent', 'modificadores.tpl', 49, false),array('modifier', 'lower', 'modificadores.tpl', 52, false),array('modifier', 'nl2br', 'modificadores.tpl', 58, false),array('modifier', 'replace', 'modificadores.tpl', 61, false),array('modifier', 'spacify', 'modificadores.tpl', 64, false),array('modifier', 'wordwrap', 'modificadores.tpl', 67, false),array('function', 'mailto', 'modificadores.tpl', 19, false),)), $this); ?>
@@ -65,11 +65,13 @@ smarty_core_load_plugins(array('plugins' => array(array('modifier', 'upper', 'mo
         Tópico: <?php echo ((is_array($_tmp=$this->_tpl_vars['topico'])) ? $this->_run_mod_handler('replace', true, $_tmp, ' ', '  ') : smarty_modifier_replace($_tmp, ' ', '  ')); ?>
 .
     <br />
-        Título com Spacify entre letras: <?php echo ((is_array($_tmp=$this->_tpl_vars['titulo'])) ? $this->_run_mod_handler('spacify', true, $_tmp, "^") : smarty_modifier_spacify($_tmp, "^")); ?>
+        Título com Spacify: <?php echo ((is_array($_tmp=$this->_tpl_vars['titulo'])) ? $this->_run_mod_handler('spacify', true, $_tmp, "^") : smarty_modifier_spacify($_tmp, "^")); ?>
 .
     <br />
         Tópico wordwrap: <?php echo ((is_array($_tmp=$this->_tpl_vars['topico'])) ? $this->_run_mod_handler('wordwrap', true, $_tmp, 50, "<br />") : smarty_modifier_wordwrap($_tmp, 50, "<br />")); ?>
 .
-
+    <br />
+        Combinando modificadores: <?php echo ((is_array($_tmp=((is_array($_tmp=((is_array($_tmp=$this->_tpl_vars['titulo'])) ? $this->_run_mod_handler('upper', true, $_tmp) : smarty_modifier_upper($_tmp)))) ? $this->_run_mod_handler('spacify', true, $_tmp, '^') : smarty_modifier_spacify($_tmp, '^')))) ? $this->_run_mod_handler('truncate', true, $_tmp, 15, '...') : smarty_modifier_truncate($_tmp, 15, '...')); ?>
+.
     </body>
 </html>
