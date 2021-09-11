@@ -1,5 +1,5 @@
 218
-a:5:{s:8:"template";a:2:{s:19:"funcoesInternas.tpl";b:1;s:16:"pegar_banner.tpl";b:1;}s:6:"config";a:1:{s:18:"configuracoes.conf";b:1;}s:9:"timestamp";i:1631212510;s:7:"expires";i:1631216110;s:13:"cache_serials";a:0:{}}<!DOCTYPE html>
+a:5:{s:8:"template";a:2:{s:19:"funcoesInternas.tpl";b:1;s:16:"pegar_banner.tpl";b:1;}s:6:"config";a:1:{s:18:"configuracoes.conf";b:1;}s:9:"timestamp";i:1631362765;s:7:"expires";i:1631366365;s:13:"cache_serials";a:0:{}}<!DOCTYPE html>
 <html>
 <head>
     <meta charset="UTF-8"/>
@@ -9,9 +9,7 @@ a:5:{s:8:"template";a:2:{s:19:"funcoesInternas.tpl";b:1;s:16:"pegar_banner.tpl";
         <h3>Chapter 7. Funções internas</h3>
                                     <tr>
                 <td>
-                            <br />
-<b>Warning</b>:  Smarty error: unable to read resource: &quot;pegar_banner.tpl&quot; in <b>C:\xampp_PHP5\htdocs\smarty2\smarty-2.6.31\libs\Smarty.class.php</b> on line <b>1100</b><br />
-        
+                                    
                 </td>
             </tr>
                          

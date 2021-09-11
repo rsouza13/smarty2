@@ -1,5 +1,9 @@
 <?php
-
+/* Informa o nível dos erros que serão exibidos */
+error_reporting(E_ALL);
+ 
+/* Habilita a exibição de erros */
+ini_set("display_errors", 1);
 
 // hack version example that works on both *nix and windows
 // Smarty is assumend to be in 'includes/' dir under current script
